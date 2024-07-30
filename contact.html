@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="Resources/html5shiv.js"></script>
+    <style type="text/css">
+        <!--
+        #Name {
+            width: 88%;
+            padding: 1%;
+            margin-top: 5px;
+            background-color: #fff;
+            border: solid #02bce4 1px
+        }
+
+        #Email {
+            width: 88%;
+            padding: 1%;
+            margin-top: 5px;
+            background-color: #fff;
+            border: solid #acacac 1px
+        }
+
+        #Message {
+            width: 88%;
+            height: 60px;
+            padding: 1%;
+            background-color: #fff;
+            border: solid #e0b600 1px
+        }
+
+        #Send {
+            padding: 8px 20px;
+            background-color: #e9eaec
+        }
+        -->
+    </style>
+
+    <script type="text/javascript">//<![CDATA[
+        // Modified from http://snipplr.com/view/1853/
+        function getElementsByAttribute(oElm, strTagName, strAttributeName, strAttributeValue) {
+            var arrElements = (strTagName == "*" && oElm.all) ? oElm.all : oElm.getElementsByTagName(strTagName);
+            var arrReturnElements = new Array();
+            var oAttributeValue = (typeof strAttributeValue != "undefined") ? new RegExp("(^|\\s)" + strAttributeValue + "(\\s|$)", "i") : null;
+            var oCurrent;
+            var oAttribute;
+            for (var i = 0; i < arrElements.length; i++) {
+                oCurrent = arrElements[i];
+                oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);
+                if (typeof strAttributeValue == "undefined") {
+                    if (typeof oAttribute == "string")
+                        arrReturnElements.push(oCurrent);
+                }
+                else if (typeof oAttribute == "string" && oAttribute.length > 0) {
+                    if (oAttributeValue && oAttributeValue.test(oAttribute))
+                        arrReturnElements.push(oCurrent);
+                }
+            }
+            return arrReturnElements;
+        }
+
+        function testFields() {
+            var emailFields = getElementsByAttribute(document, "*", "type", "email");
+            var invalidEmailCount = 0;
+            for (var i = 0; i < emailFields.length; i++) {
+                var field = emailFields[i];
+                if (field.value) {
+                    var mail1 = ".+";
+                    var mail2 = "@";
+                    var mail3 = "\\.";
+                    if (!field.value.match(mail1 + mail2 + mail1 + mail3 + mail1)) {
+                        invalidEmailCount++;
+                        if (!field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+                            field.className += " sendFormInvalid";
+                    }
+                    else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+                        field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g, '');
+                }
+                else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+                    field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g, '');
+            }
+
+            var requiredFields = getElementsByAttribute(document, "*", "required");
+            var invalidRequiredCount = 0;
+            for (var i = 0; i < requiredFields.length; i++) {
+                var field = requiredFields[i];
+                if (!field.value) {
+                    invalidRequiredCount++;
+                    if (!field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+                        field.className += " sendFormRequired";
+                }
+                else if (field.value && field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+                    field.className = field.className.replace(/(?:^|\s)sendFormRequired(?!\S)/g, '');
+            }
+
+            if (invalidRequiredCount > 0 || invalidEmailCount > 0) {
+                alert("Please fill out all required fields with valid details.");
+                return false;
+            }
+            else
+                return true;
+        }
+        //]]></script>
+</head>
+
+<body>
+    <form action="FW_SendForm_contact6.php" method="post" onsubmit="return testFields()">
+        <div id="PageDiv" class="f-cf">
+            <div id="page-wrapper" class="f-cf f-ms">
+                <div id="header-container"></div>
+                <div id="body" class="f-cf f-ms">
+                    <div id="left-column">
+                        <p class="f-fp"><span class="Heading">Contact</span></p>
+
+                        <p class="Body">&nbsp;</p>
+                        <p class="Body">Name<br><input id="Name" type=text name="Name" placeholder="Name" size=104
+                                required></p>
+                        <p class="Body">Email<br><input id="Email" type=email name="Email"
+                                placeholder="&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;"
+                                size=104 required></p>
+                        <p class="Body">Message<br><textarea id="Message" cols=104 rows=3 name="Message"
+                                placeholder="Your message..." required></textarea></p>
+                        <p class="f-lp"><input id="Send" type=submit value="Send"></p>
+                    </div>
+                </div>
+                <div id="footer-container"></div>
+            </div>
+        </div>
+        <input name="sendForm85973" id="sendForm85973" tabindex="-1" style="display:none;">
+    </form>
+    <script src="loadHeaderFooter.js" defer></script>
+    <script src="Resources/fwResponsiveMenus12.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

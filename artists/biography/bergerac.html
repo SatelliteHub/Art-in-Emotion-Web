@@ -1,0 +1,586 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bergerac</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+	<script src="loadHeader.js" defer></script>
+	<style type="text/css">
+		<!--
+		body {
+			margin: 0px;
+			background-color: #fff;
+			height: 100%
+		}
+
+		html {
+			height: 100%
+		}
+
+		form {
+			margin: 0px
+		}
+
+		body>form {
+			height: 100%
+		}
+
+		img {
+			margin: 0px;
+			border-style: none
+		}
+
+		button {
+			margin: 0px;
+			border-style: none;
+			padding: 0px;
+			background-color: transparent;
+			vertical-align: top
+		}
+
+		table {
+			empty-cells: hide
+		}
+
+		td {
+			padding: 0px
+		}
+
+		.f-sp {
+			font-size: 1px;
+			visibility: hidden
+		}
+
+		.f-lp {
+			margin-bottom: 0px
+		}
+
+		.f-fp {
+			margin-top: 0px
+		}
+
+		.f-cf:before,
+		.f-cf:after {
+			content: " ";
+			display: table
+		}
+
+		.f-cf {
+			_zoom: 1
+		}
+
+		.f-cf:after {
+			clear: both
+		}
+
+		a:link {
+			color: #fff;
+			text-decoration: underline
+		}
+
+		a:visited {
+			color: #fff;
+			text-decoration: underline
+		}
+
+		a:hover {
+			color: #ff7d00;
+			text-decoration: underline
+		}
+
+		a:active {
+			color: #ff7d00;
+			text-decoration: underline
+		}
+
+		.Header {
+			text-decoration: none;
+			text-align: center
+		}
+
+		.Body {
+			font-family: Arial, Helvetica, sans-serif
+		}
+
+		.Heading {
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 36px
+		}
+
+		.style6 {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: justify
+		}
+
+		.Footer {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			text-align: center
+		}
+
+		.Link {
+			color: #42a5f5
+		}
+
+		#PageDiv {
+			position: relative;
+			min-height: 100%
+		}
+
+		#page-wrapper.f-ms {
+			z-index: 0
+		}
+
+		#header.f-ms {
+			width: 952px;
+			z-index: 0;
+			clear: both;
+			padding: 2%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px
+		}
+
+		#artinemotionLogo.f-ms {
+			left: 325px;
+			top: 30px;
+			width: 302px;
+			height: 45px;
+			vertical-align: middle;
+			overflow: hidden
+		}
+
+		#navigation.f-ms {
+			width: 50%;
+			z-index: 0;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		#body.f-ms {
+			width: 952px;
+			z-index: 0;
+			clear: both;
+			padding: 2%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 40px
+		}
+
+		#left-column {
+			width: 55%;
+			z-index: 0;
+			float: left
+		}
+
+		#content {
+			z-index: 0;
+			padding: 10px
+		}
+
+		#right-column {
+			width: 40%;
+			z-index: 0;
+			float: right;
+			padding-left: 2%;
+			padding-right: 2%;
+			border-left: solid #333 1px
+		}
+
+		#bergerac-slideshow {
+			width: 100%;
+			display: inline-block
+		}
+
+		#footer.f-ms {
+			width: 952px;
+			z-index: 0;
+			clear: both;
+			padding: 2%;
+			margin-left: auto;
+			margin-right: auto;
+			border-top: solid #333 1px
+		}
+
+		#navigation {
+			height: auto;
+			overflow: visible;
+			position: relative
+		}
+
+		.fwNavContainer1 {
+			float: right;
+			position: relative;
+			right: 50%
+		}
+
+		#fwNav1 {
+			position: relative;
+			display: block;
+			left: 50%;
+			padding: 0;
+			margin: 0;
+			list-style: none
+		}
+
+		#fwNav1 .fwNavItem {
+			width: auto;
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			border-right: 1px solid #CCCCCC;
+			border-top: 0;
+			border-bottom: 0;
+			border-left: 0
+		}
+
+		#fwNav1 .fwNavItem a {
+			display: block;
+			color: #000000;
+			text-decoration: none;
+			padding: 10px 10px 10px 10px
+		}
+
+		#fwNav1 .fwFirstChild {
+			border-left: 0
+		}
+
+		#fwNav1 .fwLastChild {
+			border-right: 0
+		}
+
+		#fwNav1 .fwNavItem a:hover,
+		#fwNav1 .fwNavItem span a:hover,
+		#fwNav1 .fwNavItem a:focus {
+			color: #02BCE4;
+			text-decoration: none
+		}
+
+		#fwNav1 .fwNavItem a:active {
+			color: #E0B600;
+			text-decoration: none
+		}
+
+		#fwNav1-toggle,
+		.fwNav1-toggle-label {
+			display: none
+		}
+
+		.fwNav1-toggle-label {
+			width: 30px;
+			height: 30px;
+			overflow: hidden;
+			background-image: url('../../Resources/Menu%20Icon7.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		#fwNav1 .fwNavItem a.fwCurrent,
+		#fwNav1 .fwNavItem a.fwCurrent:hover {
+			display: block;
+			color: #E0B600;
+			font-weight: normal
+		}
+
+		@media screen and (max-width:1024px) {
+			#header.f-ms {
+				width: 730px
+			}
+
+			#body.f-ms {
+				width: 730px
+			}
+
+			#footer.f-ms {
+				width: 730px
+			}
+		}
+
+		@media screen and (max-width:768px) {
+			#header.f-ms {
+				width: 442px
+			}
+
+			#navigation.f-ms {
+				width: 40%;
+				margin-top: -5px
+			}
+
+			#body.f-ms {
+				width: 423px;
+				padding: 4%
+			}
+
+			#left-column {
+				width: auto;
+				float: none;
+				margin-left: auto;
+				margin-right: auto
+			}
+
+			#right-column {
+				width: auto;
+				float: none;
+				padding-top: 20px;
+				margin-top: 20px;
+				border-left: none;
+				border-top: solid #333 1px
+			}
+
+			#footer.f-ms {
+				width: 442px
+			}
+
+			.fwNavContainer1 {
+				display: none;
+				position: fixed;
+				width: 100%;
+				top: 0;
+				right: 0;
+				bottom: 100%;
+				left: 0;
+				margin-top: -100%;
+				background-color: #E9EAEC;
+				-webkit-overflow-scrolling: touch;
+				overflow: auto;
+				float: none;
+				-webkit-transition: .2s ease-out margin, .2s ease-out bottom;
+				-moz-transition: .2s ease-out margin, .2s ease-out bottom;
+				-ms-transition: .2s ease-out margin, .2s ease-out bottom;
+				-o-transition: .2s ease-out margin, .2s ease-out bottom;
+				transition: .2s ease-out margin, .2s ease-out bottom
+			}
+
+			#fwNav1 {
+				width: 100%;
+				right: 0;
+				left: 0;
+				margin-top: 0px
+			}
+
+			#fwNav1 .fwNavItem {
+				box-sizing: border-box;
+				float: none;
+				overflow: hidden;
+				width: 100%;
+				border-bottom: 1px solid #CCCCCC;
+				border-right: 0;
+				border-top: 0;
+				border-left: 0
+			}
+
+			#fwNav1 .fwNavItem a {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+				padding-right: 20px
+			}
+
+			#fwNav1 .fwFirstChild {
+				border-top: 0
+			}
+
+			#fwNav1 .fwLastChild {
+				border-bottom: 0
+			}
+
+			.fwNav1-toggle-label {
+				display: block;
+				position: relative;
+				cursor: pointer;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				user-select: none
+			}
+
+			.fwNav1-toggle-close {
+				background-image: url('../../Resources/Close%20Icon7.png');
+				margin: 140px auto 20px auto
+			}
+
+			.fwNavContainer1.fwMenuOn {
+				margin-top: 0;
+				bottom: 0
+			}
+		}
+
+		@media screen and (max-width:480px) {
+			#header.f-ms {
+				width: auto
+			}
+
+			#body.f-ms {
+				width: auto
+			}
+
+			#footer.f-ms {
+				width: auto;
+				margin-left: 0px;
+				margin-right: 0px
+			}
+		}
+		-->
+	</style>
+	<!--[if lt IE 9]>
+<script src="../../Resources/html5shiv.js"></script>
+<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- http://www.google.com/fonts#UsePlace:use/Collection:Roboto:300,700 -->
+	<link rel="apple-touch-icon" href="../../Resources/iOS%20icon1.png">
+	<link rel="shortcut icon" href="../../Resources/Favicon1.png" type="image/png">
+	<link rel="icon" href="../../Resources/Favicon1.png" type="image/png">
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-108448397-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div id="PageDiv" class="f-cf">
+		<div id="page-wrapper" class="f-cf f-ms">
+			<div id="header" class="f-cf f-ms">
+				<p class="f-fp">&nbsp;</p>
+				<p class="Header"><a href="../../index.html"><img id="artinemotionLogo" class="f-ms"
+							src="../../Resources/artinemotionlogo1.jpeg" alt="artinemotionLogo"></a></p>
+				<p>&nbsp;</p>
+				<div id="navigation" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="Body f-fp f-lp" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="../../index.html">artists</a></li>
+							<li class="fwNavItem"><a href="../../about.html"><span class="Body"
+										style="text-decoration:none">about</span></a></li>
+							<!--<li class="fwNavItem"><a href="../../artists.html">artists</a></li>-->
+							<li class="fwLastChild fwNavItem"><a href="../../contact.html"><span class="Body"
+										style="text-decoration:none">contact</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="body" class="f-cf f-ms">
+				<div id="left-column">
+					<div id="content" class="f-cf">
+						<p class="f-fp"><span class="Heading">Bergerac</span></p>
+						<p class="style6">Bergerac was born in France in 1962 in France.</p>
+						<p class="style6">He began to exhibit in the early 80s. His solo exhibitions were very
+							successful, in Europe. In 1990, he exhibited in Japan with the same success and his
+							exhibitions graudally moved away from Europe.</p>
+						<p class="style6">From his travels in Africa, he began to paint wild life from the banks of the
+							Okavango, the Kalahari Desert, Mpumalanga province, Kruger Park, or Masai Mara. Names that
+							resonate in our minds, images of wild natural spaces, flocks of elephants, migrations of
+							zebras, felines…</p>
+						<p class="style6 f-lp">Bergerac's compositions are powerful. High-class monochrome canvases that
+							fit perfectly into any contemporary interiors.</p>
+					</div>
+				</div>
+				<div id="right-column">
+					<div id="bergerac-slideshow" class="xb-slide">
+						<script>
+							(function (s, t, y, l, e) {
+								y = [].concat(y); for (l = 0; l < y.length; l++) { e = s.createElement(t); e.rel = "stylesheet"; e.href = y[l]; s.getElementsByTagName("head")[0].appendChild(e) };
+							})(document, "link", ["../Resources/exibid_slide-styles1.css"]);
+							(function (ex, h, i, b, e, o) {
+								ex[e] = ex[e] || function () { (ex[e].a = ex[e].a || []).push(arguments) }; b = [].concat(b); for (var l = 0; l < b.length; l++) { o = ex[e][b[l]] || h.createElement(i); o.async = 1; o.src = b[l]; h.getElementsByTagName("head")[0].appendChild(o); ex[e][b[l]] = o; }
+							})(window, document, "script", ["../../Resources/slide12.js"], "xb_slide");
+						</script>
+						<figure class="xb-slide-figure">
+							<img src="../Resources/exibid_BER-03InHerProtection15x12.jpg">
+						</figure>
+						<a class="hidden" href="../Resources/exibid_BER-03InHerProtection15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-01Intensity15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-02Brave15x13.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-04ReadyfortheBattle15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-05Intensity15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-06Savage15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-07TheLeader15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-08MyAlfa15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-09Tranquility15x13.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-10EyeForAnEye15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-11Fierceness15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-12UndermyProtection15x11.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-13TheRisingOne15x11.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-14HappyTogether15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-15Oasis15x11.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-16FastandFurious15x12.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-17KeepYourEyesOpen15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-18TwoBrothers15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-18WildLife15x15.jpg">
+						</a>
+						<a class="hidden" href="../Resources/exibid_BER-19WildLife15x15.jpg">
+						</a>
+						<script>
+							window.xb_slide(document.scripts[document.scripts.length - 1].parentNode.id, {
+								"animation": "kenburns",
+								"duration": 5,
+								"randomImages": true,
+								"captions": true,
+								"autohide": false,
+								"sections": 4,
+								"openLinksInNewWindow": false,
+								"displayBulletNav": false,
+								"displayStepNav": false,
+								"displayPlayPause": false,
+								"pauseOnHover": false
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="f-cf f-ms">
+				<p class="Footer f-fp f-lp">Copyright © 2020 artinemotion, All Rights Reserved｜<a
+						href="../../privacypolicy.html"><span class="Link" style="text-decoration:underline">Terms of
+							Use</span></a></p>
+			</div>
+		</div>
+	</div>
+	<script src="../../Resources/fwResponsiveMenus12.js"></script>
+
+
+	<script type="text/javascript">//<![CDATA[
+
+		fwShowHideMenu("navigation", 768);
+		fwAddListener(document.getElementById("fwNav1-toggle"), "click", function () {
+			fwToggleMenu(this);
+		});
+		fwAddListener(window, "resize", function () {
+			fwShowHideMenu("navigation", 768);
+		});
+
+		//]]></script>
+</body>
+
+</html>
