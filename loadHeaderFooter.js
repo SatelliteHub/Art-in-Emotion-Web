@@ -1,7 +1,7 @@
 // loadContent.js
 document.addEventListener("DOMContentLoaded", function() {
     // Load the common head content and header/footer
-    fetch('header-footer.html')
+    fetch('/header-footer.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();

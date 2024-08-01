@@ -1,45 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
-	<meta charset="UTF-8">
-	<title>Micä</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport"
-		content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
-	<link rel="stylesheet" href="/styles.css">
-	<link rel="apple-touch-icon" href="../Resources/iOS%20icon1.png">
-	<link rel="shortcut icon" href="../Resources/Favicon1.png" type="image/png">
-	<link rel="icon" href="../Resources/Favicon1.png" type="image/png">
-	<script async="" src="//www.google-analytics.com/analytics.js"></script>
-	<link rel="stylesheet" href="../Resources/exibid_thumblie-styles2.css">
-	<script async="" src="../Resources/exibid_thumblie2.js"></script>
-	<script src="loadHeader.js" defer></script>
-</head>
-
 <body>
 	<div id="PageDiv" class="f-cf">
 		<div id="page-wrapper" class="f-cf f-ms">
-			<div id="header" class="f-cf f-ms">
-				<p class="f-fp">&nbsp;</p>
-				<p class="Header"><a href="../index.html"><img id="artinemotionLogo" class="f-ms"
-							src="../Resources/artinemotionlogo1.jpeg" alt="artinemotionLogo"></a></p>
-				<p>&nbsp;</p>
-				<div id="navigation" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
-					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
-					<div class="fwNavContainer1">
-						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
-						<ul class="Body f-fp f-lp" id="fwNav1">
-							<li class="fwFirstChild fwNavItem"><a href="../index.html">artists</a></li>
-							<li class="fwNavItem"><a href="../about.html"><span class="Body"
-										style="text-decoration:none">about</span></a></li>
-							<!--<li class="fwNavItem"><a href="../artists.html">artists</a></li>-->
-							<li class="fwLastChild fwNavItem"><a href="../contact.html"><span class="Body"
-										style="text-decoration:none">contact</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<div id="header-container"></div>
 			<div id="body" class="f-cf f-ms">
 				<div id="mica-box" class="f-cf">
 					<p class="HeaderCenter f-fp">Micä</p>
@@ -54,7 +18,7 @@
 								})(document, "link", ["../Resources/exibid_thumblie-styles2.css"]);
 								window.jQuery || document.write("\x3Cscript src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js\"\x3E\x3C/script\x3E");
 							</script>
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+							<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> -->
 							<ul class="xb-thumblie_thumbs">
 								<li>
 									<a href="../Resources/exibid_MIC-01FlyingHigh15x15a.jpg">
@@ -198,38 +162,14 @@
 					</div>
 				</div>
 			</div>
-			<div id="footer" class="f-cf f-ms">
-				<p class="Footer f-fp f-lp">Copyright © 2020 artinemotion, All Rights Reserved｜<a
-						href="../privacypolicy.html"><span class="Link" style="text-decoration:underline">Terms of
-							Use</span></a></p>
-			</div>
+			<div id="footer-container"></div>
 		</div>
 	</div>
+	<script src="/loadHeaderFooter.js" defer></script>
 	<script src="../Resources/fwResponsiveMenus12.js"></script>
 	<script src="/script.js"></script>
-
-	<div class="xb-thumblie_overlay mica-gallery-thumblie_overlay" style="opacity: 1; display: none;"></div>
-	<div class="xb-thumblie_close xb-thumblie_ui" style="display: none;">
-		<p class="xb-thumblie_ui_small" title="Close">X</p>
-	</div>
-	<div class="xb-thumblie_info xb-thumblie_ui xb-thumblie_ui_small" style="display: none;">23 / 28</div>
-	<div class="xb-thumblie_image-container"
-		style="width: 543px; height: 540px; top: 5.5px; left: 390.5px; font-family: Helvetica, Arial, sans-serif; display: none;">
-		<div class="xb-thumblie_image"><img src="../Resources/exibid_MIC-23FromtheGoldenAge15x15a.jpg"
-				style="height: 540px; width: 543px; opacity: 1;"></div>
-	</div>
-	<div class="xb-thumblie_caption xb-thumblie_ui" style="text-overflow: ellipsis; display: none;"></div>
-	<div class="xb-thumblie_controls xb-thumblie_ui" style="display: none;">
-		<div class="xb-thumblie_prev">
-			<p class="xb-thumblie_ui_small" title="Previous">«</p>
-		</div>
-		<div class="xb-thumblie_play">
-			<p class="xb-thumblie_ui_small" title="Play">&gt;</p>
-		</div>
-		<div class="xb-thumblie_next">
-			<p class="xb-thumblie_ui_small" title="Next">»</p>
-		</div>
-	</div>
 </body>
+
+</html>
 
 </html>
