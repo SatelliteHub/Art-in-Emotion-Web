@@ -13,7 +13,7 @@
 	font-style: normal;
 }
 
-#bergerac-gallery1 {
+#artist-gallery {
     text-align: center;
 }
 
@@ -152,10 +152,10 @@
 *********************************************************************
 */
 /* Thumbs appearance */
-#bergerac-gallery1 .xb-thumblie_thumbs li {
+#artist-gallery .xb-thumblie_thumbs li {
 	padding: 10px
 }
-#bergerac-gallery1 .xb-thumblie_thumbs img {
+#artist-gallery .xb-thumblie_thumbs img {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -164,29 +164,29 @@
 	border: 1px solid #ffffff;
 	box-shadow: 0px 0px 1px rgba(50,50,50,.4);
 }
-#bergerac-gallery1 .xb-thumblie_thumbs img:hover {
+#artist-gallery .xb-thumblie_thumbs img:hover {
 	border: 1px solid #15a3d8;
 	box-shadow: 0px 0px 2px #888;
 }
 /* Overlay color and opacity */
-.bergerac-gallery1-thumblie_overlay {
+.artist-gallery-thumblie_overlay {
 	background: transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);;
 	zoom: 1;
 	background: rgba(0,0,0,0.80);
 }
 /* Background color of image container */
-.bergerac-gallery1-thumblie_image-container {
+.artist-gallery-thumblie_image-container {
 	background: rgba(255,255,255,1.00);
 }
 
 /* Image appearance */
-.bergerac-gallery1-thumblie_image-container img {
+.artist-gallery-thumblie_image-container img {
 	border: 4px solid #ffffff;
 	box-shadow: 0px 0px 10px #000;
 }
 /* General interface appearance (controls, close, info and captions) */
-.bergerac-gallery1-thumblie_ui {
+.artist-gallery-thumblie_ui {
 	background: transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);;
 	zoom: 1;
@@ -194,21 +194,21 @@
 	padding: 15px;
 	box-shadow: 0px 0px 0px #111;
 }
-.bergerac-gallery1-thumblie_ui, .bergerac-gallery1-thumblie_ui p {
+.artist-gallery-thumblie_ui, .artist-gallery-thumblie_ui p {
 	color: #ffffff;
 }
 /* Image numbers */
-.bergerac-gallery1-thumblie_info {
+.artist-gallery-thumblie_info {
 	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
 }
 /* Image titles */
-.bergerac-gallery1-thumblie_caption h1 {
+.artist-gallery-thumblie_caption h1 {
 	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
 	font-size: 0.81em;
 	color: #ffffff;
 }
 /* Image caption */
-.bergerac-gallery1-thumblie_caption p {
+.artist-gallery-thumblie_caption p {
 	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
 	font-size: 0.75em;
 	color: #ffffff;

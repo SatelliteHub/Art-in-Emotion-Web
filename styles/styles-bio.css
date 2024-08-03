@@ -112,6 +112,7 @@ a:active {
 }
 
 .Link {
+    font-family: Arial;
     color: #42a5f5
 }
 
@@ -166,6 +167,13 @@ a:active {
     float: left
 }
 
+#left-column-with-line {
+    width: 55%;
+    z-index: 0;
+    float: left
+    border-right: solid #333 1px
+}
+
 #content {
     z-index: 0;
     padding: 10px
@@ -180,10 +188,14 @@ a:active {
     border-left: solid #333 1px
 }
 
-#bergerac-slideshow {
-    width: 100%;
-    display: inline-block
+#right-column-no-line {
+    width: 40%;
+    z-index: 0;
+    float: right;
+    padding-left: 2%;
+    padding-right: 2%;
 }
+
 
 #footer.f-ms {
     width: 952px;
@@ -264,7 +276,7 @@ a:active {
     width: 30px;
     height: 30px;
     overflow: hidden;
-    background-image: url('../../Resources/Menu%20Icon7.png');
+    background-image: url('/images/Menu%20Icon7.png');
     background-repeat: no-repeat;
     background-size: 100%;
     margin-left: auto;
@@ -390,7 +402,7 @@ a:active {
     }
 
     .fwNav1-toggle-close {
-        background-image: url('../../Resources/Close%20Icon7.png');
+        background-image: url('/images/Close%20Icon7.png');
         margin: 140px auto 20px auto
     }
 

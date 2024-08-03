@@ -116,10 +116,6 @@ a:active {
     text-align: center
 }
 
-.Link {
-    color: #42a5f5
-}
-
 .Footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -348,7 +344,7 @@ a:active {
     width: 30px;
     height: 30px;
     overflow: hidden;
-    background-image: url('Resources/Menu%20Icon7.png');
+    background-image: url('/images/Menu%20Icon7.png');
     background-repeat: no-repeat;
     background-size: 100%;
     margin-left: auto;
@@ -490,7 +486,7 @@ a:active {
     }
 
     .fwNav1-toggle-close {
-        background-image: url('Resources/Close%20Icon7.png');
+        background-image: url('/images/Close%20Icon7.png');
         margin: 140px auto 20px auto
     }
 
@@ -556,11 +552,11 @@ a:active {
 
 
 
-.nav-link {
+/* .nav-link {
     color: black; /* Default link color */
     text-decoration: none;
 }
 
 .nav-link.active {
     color: red; /* Highlight color for the current page */
-}
+} */
