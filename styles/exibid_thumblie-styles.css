@@ -4,17 +4,17 @@
 
 @font-face {
 	font-family: 'thumblie';
-		src: url('thumblie.eot');
+	src: url('thumblie.eot');
 	src: url('thumblie.eot?#iefix') format('embedded-opentype'),
-		 url('thumblie.woff') format('woff'),
-		 url('thumblie.ttf') format('truetype'),
-		 url('thumblie.svg#thumblie') format('svg');
+		url('thumblie.woff') format('woff'),
+		url('thumblie.ttf') format('truetype'),
+		url('thumblie.svg#thumblie') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 #artist-gallery {
-    text-align: center;
+	text-align: center;
 }
 
 /* Thumbnails */
@@ -24,24 +24,27 @@
 	margin: 0;
 	overflow: hidden;
 	display: inline-block;
-	*display: inline;
+	/* *display: inline; */ /* This line is not necessary if we want inline-block */
 	zoom: 1;
 	text-align: center;
 }
+
 .xb-thumblie_thumbs li {
 	display: inline-block;
-	*display: inline;
+	/* *display: inline; */ /* This line is not necessary if we want inline-block */
 	zoom: 1;
 	text-align: center;
 }
+
 .xb-thumblie_thumbs a:before {
-	content: "";
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-	height: 100%;
-	vertical-align: middle;
+    content: "";
+    display: inline-block;
+    /* *display: inline; */ /* This line is not necessary if we want inline-block */
+    zoom: 1; /* This is an IE-specific property */
+    height: 100%;
+    vertical-align: middle;
 }
+
 .xb-thumblie_thumbs a {
 	display: block;
 	width: 100%;
@@ -49,9 +52,12 @@
 	text-decoration: none;
 	font-size: 0;
 }
+
 .xb-thumblie_thumbs img {
 	display: inline-block;
-	zoom: 1; *display: inline; /* < IE8 hack */
+	zoom: 1;
+	/* *display: inline; */ /* This line is not necessary if we want inline-block */
+	/* < IE8 hack */
 	border: 0;
 	vertical-align: middle;
 }
@@ -71,6 +77,7 @@
 	overflow: hidden;
 	font-size: 16px;
 }
+
 .xb-thumblie_image-container {
 	display: none;
 	position: fixed;
@@ -78,11 +85,13 @@
 	left: 50%;
 	z-index: 999998;
 }
+
 .xb-thumblie_image-container img {
 	box-sizing: border-box;
 	position: absolute;
 	border: 0;
 }
+
 .xb-thumblie_image-link {
 	position: absolute;
 	display: block;
@@ -98,25 +107,31 @@
 .xb-thumblie_ui {
 	position: fixed;
 	z-index: 999999;
-	display: none; 
+	display: none;
 }
+
 .xb-thumblie_close {
 	top: 0px;
 	left: 0px;
 }
+
 .xb-thumblie_info {
 	top: 0px;
 	right: 0px;
 }
+
 .xb-thumblie_controls {
 	bottom: 0px;
 	right: 0px;
 }
+
 .xb-thumblie_caption {
 	bottom: 0px;
 	left: 0px;
 }
-.xb-thumblie_close p, .xb-thumblie_controls p {
+
+.xb-thumblie_close p,
+.xb-thumblie_controls p {
 	margin: 0;
 	padding: 0 4px;
 	font-family: thumblie, sans-serif;
@@ -126,23 +141,30 @@
 	user-select: none;
 	cursor: pointer;
 }
+
 .xb-thumblie_ui_small {
 	font-size: .75em;
 }
+
 .xb-thumblie_controls div {
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-	vertical-align: middle;
+    display: inline-block;
+    display: inline; /* This line is not necessary if you want inline-block */
+    zoom: 1; /* This is an IE-specific property */
+    vertical-align: middle;
 }
+
+
 .xb-thumblie_play p {
 	font-size: 1.3em;
 	vertical-align: top;
 }
-.xb-thumblie_caption h1, .xb-thumblie_caption p {
-	margin:0;
-	padding:0;
+
+.xb-thumblie_caption h1,
+.xb-thumblie_caption p {
+	margin: 0;
+	padding: 0;
 }
+
 .xb-thumblie_caption p {
 	margin-top: 4px;
 }
@@ -155,6 +177,7 @@
 #artist-gallery .xb-thumblie_thumbs li {
 	padding: 10px
 }
+
 #artist-gallery .xb-thumblie_thumbs img {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -162,22 +185,26 @@
 	max-width: 195px;
 	max-height: 195px;
 	border: 1px solid #ffffff;
-	box-shadow: 0px 0px 1px rgba(50,50,50,.4);
+	box-shadow: 0px 0px 1px rgba(50, 50, 50, .4);
 }
+
 #artist-gallery .xb-thumblie_thumbs img:hover {
 	border: 1px solid #15a3d8;
 	box-shadow: 0px 0px 2px #888;
 }
+
 /* Overlay color and opacity */
 .artist-gallery-thumblie_overlay {
 	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+	;
 	zoom: 1;
-	background: rgba(0,0,0,0.80);
+	background: rgba(0, 0, 0, 0.80);
 }
+
 /* Background color of image container */
 .artist-gallery-thumblie_image-container {
-	background: rgba(255,255,255,1.00);
+	background: rgba(255, 255, 255, 1.00);
 }
 
 /* Image appearance */
@@ -185,31 +212,38 @@
 	border: 4px solid #ffffff;
 	box-shadow: 0px 0px 10px #000;
 }
+
 /* General interface appearance (controls, close, info and captions) */
 .artist-gallery-thumblie_ui {
 	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#00000000);
+	;
 	zoom: 1;
-	background: rgba(0,0,0,0.00);
+	background: rgba(0, 0, 0, 0.00);
 	padding: 15px;
 	box-shadow: 0px 0px 0px #111;
 }
-.artist-gallery-thumblie_ui, .artist-gallery-thumblie_ui p {
+
+.artist-gallery-thumblie_ui,
+.artist-gallery-thumblie_ui p {
 	color: #ffffff;
 }
+
 /* Image numbers */
 .artist-gallery-thumblie_info {
-	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", FreeSans, sans-serif;
 }
+
 /* Image titles */
 .artist-gallery-thumblie_caption h1 {
-	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", FreeSans, sans-serif;
 	font-size: 0.81em;
 	color: #ffffff;
 }
+
 /* Image caption */
 .artist-gallery-thumblie_caption p {
-	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", FreeSans, sans-serif;
 	font-size: 0.75em;
 	color: #ffffff;
 }

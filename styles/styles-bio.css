@@ -170,9 +170,10 @@ a:active {
 #left-column-with-line {
     width: 55%;
     z-index: 0;
-    float: left
-    border-right: solid #333 1px
+    float: left;
+    border-right: solid #333 1px;
 }
+
 
 #content {
     z-index: 0;
