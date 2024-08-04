@@ -671,7 +671,7 @@
 *********************************************************************
 */
 
-#mica-slideshow {
+#artist-slideshow {
     position: relative;
 	overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -689,29 +689,29 @@
     background-size: cover;
 }
 
-#mica-slideshow {
+#artist-slideshow {
 	border: 0px solid #fffefe;
 	background-color: #fffefe;
 }
 
-#mica-slideshow .xb-slide-figcaption,
-#mica-slideshow figcaption {
+#artist-slideshow .xb-slide-figcaption,
+#artist-slideshow figcaption {
     padding: 8px 16px;
 	bottom: 0px;
 	padding: 16px;
 	text-align: left;
 }
 
-#mica-slideshow .xb-slide-figcaption h1
-,#mica-slideshow figcaption h1 {
+#artist-slideshow .xb-slide-figcaption h1
+,#artist-slideshow figcaption h1 {
 	font-family: Helvetica,"Helvetica Neue",Arial,"Nimbus Sans L",FreeSans,sans-serif;
 	font-size: 34px;
 	color: #fcfcfe;
 	text-shadow: 1px 1px 1px #333; /* User editable */
 }
 
-#mica-slideshow .xb-slide-figcaption p
-,#mica-slideshow figcaption p {
+#artist-slideshow .xb-slide-figcaption p
+,#artist-slideshow figcaption p {
 	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",FreeSans,sans-serif;
 	font-size: 20px;
 	color: #f3efef;
@@ -719,36 +719,36 @@
 	font-weight: bold; /* User editable */
 }
 
-#mica-slideshow .slide-timer {
+#artist-slideshow .slide-timer {
 	bottom: 0px;
 	visibility: hidden;
 	background-color: #262626;
 }
 
-#mica-slideshow .slide-bullet-nav li {
+#artist-slideshow .slide-bullet-nav li {
 	background-color: #878787;
 	border-color: #878787;
 }
 
-#mica-slideshow .slide-bullet-nav li:hover {
+#artist-slideshow .slide-bullet-nav li:hover {
 	background-color: #636363;
 	border-color: #636363;
 }
 
-#mica-slideshow .slide-bullet-nav li.slide-bullet-set {
+#artist-slideshow .slide-bullet-nav li.slide-bullet-set {
 	background-color: #343434;
 	border-color: #343434;
 }
 
-#mica-slideshow .slide-step-nav a,
-#mica-slideshow .slide-play-pause a {
+#artist-slideshow .slide-step-nav a,
+#artist-slideshow .slide-play-pause a {
 	background-color: #e6e6e6;
 	opacity: 0.80;
 	filter: alpha(opacity=60); /* internet explorer */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=60)"; /*IE8*/
 }
 
-#mica-slideshow .slide-play-pause a {
+#artist-slideshow .slide-play-pause a {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-o-border-radius: 4px;

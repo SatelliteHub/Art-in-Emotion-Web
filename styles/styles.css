@@ -17,11 +17,18 @@ body>form {
 }
 
 button {
-    margin: 0px;
-    border-style: none;
-    padding: 0px;
-    background-color: transparent;
-    vertical-align: top
+    color: #00b6e9;
+    background-color: #ffffff;
+    font-size: 19px;
+    border: 1px solid #aaaaaa;
+    border-radius: 50px;
+    padding: 15px 50px;
+    cursor: pointer
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #00b6e9;
 }
 
 td {
@@ -61,7 +68,7 @@ a:link {
 }
 
 a:visited {
-    color: #fff;
+    color: blue;
     text-decoration: underline
 }
 
@@ -218,33 +225,9 @@ a:active {
     overflow: hidden
 }
 
-#threeWrapper1 {
-    max-width: 1136px;
-    z-index: 0;
-    clear: both;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: auto;
-    background-color: #fff
-}
-
-#threeRight1 {
-    width: 28.25%;
-    z-index: 0;
-    float: right;
-    padding: 2%
-}
-
 #BER08MyAlfa15x15 {
     max-width: 100%;
     overflow: hidden
-}
-
-#threeLeft1 {
-    width: 28.25%;
-    z-index: 0;
-    float: left;
-    padding: 2%
 }
 
 #MIC18IconicView15x15 {
@@ -358,6 +341,17 @@ a:active {
     font-weight: normal
 }
 
+
+.style6 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify
+}
+
+#mica-slideshow {
+    width: 100%;
+    display: inline-block
+}
+
 @media screen and (max-width:1024px) {
     #header.f-ms {
         width: 730px
@@ -400,22 +394,6 @@ a:active {
     }
 
     #threeMiddle {
-        width: 94.4%
-    }
-
-    #threeWrapper1 {
-        max-width: 423px
-    }
-
-    #threeRight1 {
-        width: 96%
-    }
-
-    #threeLeft1 {
-        width: 96%
-    }
-
-    #threeMiddle1 {
         width: 94.4%
     }
 
@@ -514,15 +492,6 @@ a:active {
         margin-left: 0px
     }
 
-    #threeWrapper1 {
-        max-width: 442px
-    }
-
-    #threeMiddle1 {
-        width: 96%;
-        margin-left: 0px
-    }
-
     #footer.f-ms {
         width: auto;
         margin-left: 0px;
@@ -539,24 +508,3 @@ a:active {
         width: 94.4%
     }
 }
-
-.style6 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify
-}
-
-#mica-slideshow {
-    width: 100%;
-    display: inline-block
-}
-
-
-
-/* .nav-link {
-    color: black; /* Default link color */
-    text-decoration: none;
-}
-
-.nav-link.active {
-    color: red; /* Highlight color for the current page */
-} */
