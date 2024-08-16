@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Art in Emotion Web",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Art in Emotion Web"
+	}
+}
