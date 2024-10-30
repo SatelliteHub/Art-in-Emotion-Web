@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!--#include virtual="/globalContent/head.html" -->
+	<title>Calameo - Art in Emotion</title>
+	<link rel="stylesheet" href="/styles/exibid_thumblie-styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="PageDiv">
+		<header id="header" class="f-ms">
+			<!--#include virtual="/globalContent/header.html" -->
+		</header>
+
+		<main id="body" class="f-ms">
+			<div class="Heading">
+				<div class="image-container">
+					<img src="/images/calameo/placeholder.jpg" alt="Header Image" class="header-image">
+				</div>
+				<h1 class="header-text">Calameo</h1>
+			</div>
+
+			<div id="artist-gallery">
+				<ul class="xb-thumblie_thumbs">
+					<li>
+						<a href="/images/exibid_calameo1b.jpg">
+							<img src="/images/exibid_calameo1_thumb1.jpg" alt="Thumbnail 1">
+						</a>
+						<p class="artist-gallery-thumblie_caption">Coming_Soon<br> 100 × 100</p>
+					</li>
+					<li>
+						<a href="/images/exibid_calameo5b.jpg">
+							<img src="/images/exibid_calameo5_thumb1.jpg" alt="Thumbnail 2">
+						</a>
+						<p class="artist-gallery-thumblie_caption">Coming_Soon<br> 100 × 100</p>
+					</li>
+					<li>
+						<a href="/images/exibid_calameo6b.jpg">
+							<img src="/images/exibid_calameo6_thumb1.jpg" alt="Thumbnail 3">
+						</a>
+						<p class="artist-gallery-thumblie_caption">Coming_Soon<br> 100 × 100</p>
+					</li>
+					<li>
+						<a href="/images/exibid_calameo7b.jpg">
+							<img src="/images/exibid_calameo7_thumb1.jpg" alt="Thumbnail 4">
+						</a>
+						<p class="artist-gallery-thumblie_caption">Coming_Soon<br> 100 × 100</p>
+					</li>
+					<li>
+						<a href="/images/exibid_calameo8b.jpg">
+							<img src="/images/exibid_calameo8_thumb1.jpg" alt="Thumbnail 5">
+						</a>
+						<p class="artist-gallery-thumblie_caption">Coming_Soon<br> 100 × 100</p>
+					</li>
+				</ul>
+
+				<script>
+					(function (ex, h, i, b, e, o) {
+						ex[e] = ex[e] || function () { (ex[e].a = ex[e].a || []).push(arguments) };
+						b = [].concat(b);
+						for (var l = 0; l < b.length; l++) {
+							o = ex[e][b[l]] || h.createElement(i);
+							o.async = 1;
+							o.src = b[l];
+							h.getElementsByTagName("head")[0].appendChild(o);
+							ex[e][b[l]] = o;
+						}
+					})(window, document, "script", ["/scripts/exibid_thumblie2.js"], "xb_thumblie");
+
+					window.xb_thumblie(document.scripts[document.scripts.length - 1].parentNode.id, {
+						"openLinksInNewWindow": false
+					});
+				</script>
+			</div>
+
+			<div style="text-align: center;">
+				<a href="bio.html">
+					<button type="button" name="linkBox">Biography</button>
+				</a>
+			</div>
+		</main>
+
+		<footer id="footer-container">
+			<!--#include virtual="/globalContent/footer.html" -->
+		</footer>
+	</div>
+
+	<script src="/scripts/fwResponsiveMenus12.js"></script>
+	<script src="/scripts/script.js"></script>
+</body>
+
+</html>

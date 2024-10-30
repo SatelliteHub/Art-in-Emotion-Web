@@ -1,107 +1,137 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!--#include virtual="/globalContent/head.html" -->
     <title>Artists - Art in Emotion</title>
-    <meta name="viewport"
-        content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="apple-touch-icon" href="/images/iOS-icon.png">
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-    <link rel="icon" href="/images/favicon.png" type="image/png">
 </head>
 
 <body>
-    <div id="PageDiv" class="f-cf">
-        <div id="page-wrapper" class="f-cf f-ms">
-            <div id="header" class="f-cf f-ms">
-                <p class="f-fp">&nbsp;</p>
-                <p class="Header"><a href="/index.html"><img id="artinemotionLogo" class="f-ms"
-                            src="/images/artinemotionLogo.svg"></a></p>
-                <p>&nbsp;</p>
-                <div id="navigation" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
-                    <label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
-                    <div class="fwNavContainer1">
-                        <label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
-                        <ul class="Body f-fp f-lp" id="fwNav1">
-                            <li class="fwFirstChild fwNavItem"><a href="/artists/" class="fwCurrent">artists</a></li>
-                            <li class="fwNavItem"><a href="/about.html"><span class="Body"
-                                        style="text-decoration:none">about</span></a></li>
-                            <li class="fwLastChild fwNavItem"><a href="/contact.html"><span class="Body"
-                                        style="text-decoration:none">contact</span></a></li>
-                        </ul>
-                    </div>
+    <div id="PageDiv">
+        <header id="header" class="f-ms">
+            <!--#include virtual="/globalContent/header.html" -->
+        </header>
+
+        <main id="body" class=" f-ms">
+            <div class="Heading">
+                <div class="image-container">
+                    <img src="/images/vianney/Golden_Gate_Bay_100x100.jpg" alt="Header Image" class="header-image">
+                </div>
+                <h1 class="header-text">Artists</h1>
+            </div><br>
+
+            <!-- TOP ROW -->
+            <div id="threeWrapper">
+                <!-- Edewann -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/edewann/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/edewann/Green_Butterflies_50x50.jpg"
+                            style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Edewann</span>
+                    </a>
+                </div>
+
+                <!-- Elyo -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/elyo/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/elyo/American_Goldfinch_80x80.jpg"
+                            style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Elyo</span>
+                    </a>
+                </div>
+
+                <!-- Peter McFloy -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/peter-mcfloy/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/peter-mcfloy/Marthas_Vineyard_Lighthouse_82x82.jpg"
+                            style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Peter McFloy</span>
+                    </a>
                 </div>
             </div>
-            <div id="body" class="f-cf f-ms">
-                <p class="HeaderCenter f-fp">Our Artists</p>
 
-                <!-- TOP ROW -->
-                <div id="threeWrapper" class="f-cf threeWrapper">
-
-                    <!-- Enzo Montana -->
-                    <div id="threeLeft" class="threeRight three">
-                        <p class="f-fp"><span class="MiniHeading">Enzo Montana</span></p>
-                        <p><span class="SubHeading">Flowers</span></p>
-                        <p class="f-lp"><span class="Heading"><a href="/artists/enzo-montana"><img id="MONTANA_1"
-                                        src="/images/exibid_MONTANA_1.jpg" alt="enzo-montana"></a></span></p>
-                    </div>
-
-                    <!-- Vianney -->
-                    <div id="threeMiddle" class="threeMiddle three">
-                        <p class="f-fp"><span class="MiniHeading">Vianney (画像)</span></p>
-                        <p><span class="SubHeading">[[[[[]]]]]</span></p>
-                        <p class="f-lp"><span class="SubHeading"><a href="/artists/vianney"><img id="calameo5"
-                                        src="/images/exibid_calameo5b.jpg" alt="vianney"></a></span></p>
-                    </div>
-
-                    <!-- Nathan NEVEN-->
-                    <div id="threeMiddle" class="threeMiddle three">
-                        <p class="f-fp"><span class="MiniHeading">Nathan Neven</span></p>
-                        <p><span class="SubHeading">Cityscapes and Interioscapes</span></p>
-                        <p class="f-lp"><span class="SubHeading"><a href="/artists/nathan-neven"><img
-                                        id="Pantheon1mx1m" src="/images/Pantheon%201%20m%20x%201m.jpg"
-                                        alt="Pantheon1mx1m"></a></span></p>
-                    </div>
-                </div>
-
-
-                <!-- BOTTOM ROW -->
-                <p>&nbsp;</p>
-                <div id="threeWrapper" class="f-cf threeWrapper">
-                </div>
-
+            <!-- MIDDLE ROW -->
+            <div id="threeWrapper">
                 <!-- Mica -->
-                <div id="threeRight" class="threeRight three">
-                    <p class="f-fp"><span class="MiniHeading">Micä</span></p>
-                    <p><span class="SubHeading">Bird's Eye View</span></p>
-                    <p class="f-lp"><span class="Heading"><a href="/artists/mica"><img id="MIC01FlyingHigh15x15"
-                                    src="/images/exibid_MIC-01FlyingHigh15x15a.jpg"
-                                    alt="MIC01FlyingHigh15x15"></a></span></p>
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/mica/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/mica/Wonderland_II_150x150.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Micä</span>
+                    </a>
                 </div>
 
-
-                <!-- Matteo -->
-                <div id="threeMiddle" class="threeMiddle three">
-                    <p class="f-fp"><span class="MiniHeading">Matteo (画像)</span></p>
-                    <p><span class="SubHeading">[[[[[]]]]]</span></p>
-                    <p class="f-lp"><span class="Heading"><a href="/artists/matteo"><img id="Pantheon1mx1m"
-                                    src="/images/Pantheon%201%20m%20x%201m.jpg" alt="Pantheon1mx1m"></a></span></p>
+                <!-- Enzo Montana -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/enzo-montana" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/enzo-montana/Careless_Love_80x80.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Enzo Montana</span>
+                    </a>
                 </div>
 
-                <!-- Peter McFloyd -->
-                <div id="threeRight" class="threeLeft three">
-                    <p class="f-fp"><span class="MiniHeading">Peter McFloyd (BRG)</span></p>
-                    <p><span class="SubHeading">[[[[[]]]]]</span></p>
-                    <p class="f-lp"><span class="Heading"><a href="/artists/peter-mcfloyd"><img id="BER08MyAlfa15x15"
-                                    src="/images/exibid_BER-08MyAlfa15x15a.jpg" alt="BER08MyAlfa15x15"></a></span></p>
+                <!-- Nathan NEVEN-->
+                <!-- <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/nathan-neven/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/nathan-neven/Shaftesbury_Fountain_100x100.jpg"
+                            style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Nathan Neven</span>
+                    </a>
+                </div> -->
+            </div>
+
+            <!-- MIDDLE ROW 2 -->
+            <div id="threeWrapper">
+                <!-- Daniel Raynott -->
+                <!-- <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="#nil" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/placeholder.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Daniel Raynott</span>
+                    </a>
+                </div> -->
+
+                <!-- Tom Tillcott -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/tom-tillcott/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/tom-tillcott/Dolly_60x60.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Tom Tillcott</span>
+                    </a>
+                </div>
+
+                <!-- Van Belle -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/van-belle/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/van-belle/Amalia_80x80.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Van Belle</span>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div id="footer-container"></div>
+
+            <!-- BOTTOM ROW -->
+            <div id="threeWrapper">
+                <!-- Vianney -->
+                <div id="threeContent" style="position: relative; display: inline-block;">
+                    <a href="/artists/vianney/" style="position: relative; display: block;">
+                        <img id="artist-list" src="/images/vianney/Miami_Holidays_80x80.jpg" style="display: block;">
+                        <span class="gradient-overlay"></span>
+                        <span class="image-text">Vianney</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer-container">
+            <!--#include virtual="/globalContent/footer.html" -->
+        </footer>
     </div>
-    <script src="/scripts/loadHeaderFooter.js"></script> <!-- Load common elements -->
+
     <script src="/scripts/fwResponsiveMenus12.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
