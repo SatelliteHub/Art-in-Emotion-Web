@@ -1,65 +1,42 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!--#include virtual="/globalContent/head.html" -->
     <title>Art in Emotion</title>
-    <meta name="viewport"
-        content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="apple-touch-icon" href="/images/iOS-icon.png">
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
-    <link rel="icon" href="/images/favicon.png" type="image/png">
 </head>
 
 <body>
-    <div id="PageDiv" class="f-cf">
-        <div id="page-wrapper" class="f-cf f-ms">
-            <div id="header" class="f-cf f-ms">
-                <p class="f-fp">&nbsp;</p>
-                <p class="Header"><a href="/index.html"><img id="artinemotionLogo" class="f-ms"
-                            src="/images/artinemotionLogo.svg"></a></p>
-                <p>&nbsp;</p>
-                <div id="navigation" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
-                    <label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
-                    <div class="fwNavContainer1">
-                        <label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
-                        <ul class="Body f-fp f-lp" id="fwNav1">
-                            <li class="fwFirstChild fwNavItem"><a href="/artists/" style="text-decoration:none">artists</a></li>
-                            <li class="fwNavItem"><a href="/about.html"><span class="Body"
-                                        style="text-decoration:none">about</span></a></li>
-                            <li class="fwLastChild fwNavItem"><a href="/contact.html"><span class="Body"
-                                        style="text-decoration:none">contact</span></a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div id="PageDiv">
+        <header id="header" class="f-ms">
+            <!--#include virtual="/globalContent/header.html" -->
+        </header>
+
+        <main id="body" class="f-ms">
+            <div class="Heading">
+                <img id="artinemotionBanner" src="/images/banner.jpg?v=1.0.1" width="100%" alt="Art in Emotion Banner">
             </div>
-            <div id="body" class="f-cf f-ms">
-                <div id="left-column">
-                    <div id="content" class="f-cf">
-                        <div style="text-align: center;">
-                            <img id="artinemotionLogo" src="/images/banner.jpg" width=100%>
-                        </div>
-
-                        <p style="font-family: 'Arial', sans-serif; font-size: 25px; font-weight: bold; text-align: center;">
-                            <br>Online Gallery. For all Art Enthusiasts.<br><br>
-                        </p>
-
-                    </div>
-                    <div style="text-align: center;">
-                        <a href="/artists">
-                            <button type="button" name="linkBox">Explore Artists</button>
-                        </a>
-                    </div>
-
-                </div>
+            <h1 style="text-align: center;">For all Art Enthusiasts</h1>
+            <div style="text-align: center;">
+                <a href="/artists">
+                    <button type="button" name="linkBox">Explore Artists</button>
+                </a>
             </div>
-            <div id="footer-container"></div>
-        </div>
+            <div class="instagram-container">
+                <a href="https://instagram.com/artinemotion1" class="instagram-link">
+                    <img src="/images/Instagram_Glyph_Gradient.svg" alt="Instagram">
+                    <span>Find us on Instagram</span>
+                </a>
+            </div>
+        </main>
+
+        <footer id="footer-container">
+            <!--#include virtual="/globalContent/footer.html" -->
+        </footer>
     </div>
-    <script src="/scripts/loadHeaderFooter.js"></script>
-    <script src="/scripts/fwResponsiveMenus12.js"></script>
-    <script src="/scripts/script.js"></script>
+
+    <script src="/scripts/fwResponsiveMenus12.js?v=1.0.1"></script>
+    <script src="/scripts/script.js?v=1.0.1"></script>
 </body>
 
 </html>

@@ -238,7 +238,7 @@
                 margin-top: 30px;
             }
         }
-        
+        }
     </style>
 </head>
 

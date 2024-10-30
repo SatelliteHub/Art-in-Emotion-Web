@@ -1,22 +1,43 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+
+<head>
+    <!--#include virtual="/globalContent/head.html" -->
+    <title>Error - Contact - Art in Emotion</title>
+</head>
+
 <body>
-    <div id="PageDiv" class="f-cf">
-        <div id="page-wrapper" class="f-cf f-ms">
-            <div id="header-container"></div>
-            <div id="body" class="f-cf f-ms">
-                <div id="left-column">
-                    <p class="f-fp"><span class="Heading">There was a problem sending your message</span></p>
-                    <p class="Body f-lp">Please <a href="contact.html"><span class="Link"
-                                style="text-decoration:underline">try again</span></a><span class="Link">.</span></p>
+    <div id="PageDiv">
+        <header id="header" class="f-ms">
+            <!--#include virtual="/globalContent/header.html" -->
+        </header>
+
+        <main id="body" class="f-ms">
+            <div class="Heading">
+                <div class="image-container">
+                    <img src="/images/mica/Wonderland_II_150x150.jpg" alt="Header Image" class="header-image">
+                </div>
+                <h1 class="header-text">Contact</h1>
+            </div>
+            <div style="text-align: center;">
+                <h1>A problem has occured.</h1>
+                <h3><a href="javascript:history.back()">Try again</a> or send us a message via Instagram.</h3>
+                <div class="instagram-container">
+                    <a href="https://instagram.com/artinemotion1" class="instagram-link">
+                        <img src="/images/Instagram_Glyph_Gradient.svg" alt="Instagram">
+                        <span>Find us on Instagram</span>
+                    </a>
                 </div>
             </div>
-            <div id="footer-container"></div>
-        </div>
+        </main>
+
+        <footer id="footer-container">
+            <!--#include virtual="/globalContent/footer.html" -->
+        </footer>
     </div>
-    <script src="/scripts/loadHeaderFooter.js" defer></script>
-    <script src="/scripts/fwResponsiveMenus12.js"></script>
-    <script src="/scripts/script.js"></script>
-    </body>
+
+    <script src="/scripts/fwResponsiveMenus12.js?v=1.0.1"></script>
+    <script src="/scripts/script.js?v=1.0.1"></script>
+</body>
 
 </html>
